@@ -1,67 +1,19 @@
 import java.util.*;
 
+class S18A{
 
-
-class AreaCalculate{
-
-    void area(int r){
-
-        System.out.println("Area of Cirlce = " + (3.14*r*r));
-
+   static void area(int r){
+        System.out.println("Area of circal is a : "+(3.14*r*r));
     }
-
-
-
-    float area(int b, float h){
-
-        return b*h/2;
-
+   static void area(int l,int h){
+        System.out.println("Area of circal is a : "+(l*h));
     }
-
-
-
-    double area(Float l, Float db){
-
-        return l+db;
-
-    }  
-
-}
-
-
-
-class Slip18A {
-
-    public static void main(String args[]){
-
-        int r, b, l, db;
-
-        float h;
-
-        Scanner br = new Scanner(System.in);
-
-        System.out.println("Enter the radius, base, height, length and breadth : ");
-
-        r = br.nextInt();
-
-        b = br.nextInt();
-
-        h = br.nextFloat();
-
-        l = br.nextInt();
-
-
-
-        db = br.nextInt();
-
-        AreaCalculate ac = new AreaCalculate();
-
-        ac.area(r);
-
-        System.out.println("Area of Triangle = " +ac.area(b,h));
-
-        System.out.println("Area of Rectange = " +ac.area(l,db));
-
+    static void area(int l,int h,int d){
+        System.out.println("Area of circal is a : "+(l*h*d));
     }
-
+    public static void main(String[] arg){
+        area(2);
+        area(5,2);
+        area(3,5,2);
+    }
 }

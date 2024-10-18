@@ -1,15 +1,3 @@
-def count(mytuple):
-   s=set()
-   for i in mytuple:
-       if(mytuple.count(i)>1):
-           s.add(i)
-   return s
-n=int(input("Enter size of tuple: "))
-print("Enter elements of tuple: ")
-#Tgts
-mylist=list()
-for i in range(n):
-    tup_ele=input()
-    mylist.append(tup_ele)
-mytuple=tuple(mylist)
-print(count(mytuple))
+T = (1, 7, 0, 9, 5, 6, 5, 4, 1, 2, 1)
+RT = set([x for x in T if T.count(x) > 1])
+print("Repeated items:", RT)

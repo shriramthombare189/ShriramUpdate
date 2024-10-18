@@ -1,6 +1,5 @@
 import java.io.*;
-
-class Slip_1_1_B{
+class S1B{
     public static void main(String args[]) throws IOException{
         char ch;
         FileReader fr = new FileReader("a.txt");
@@ -16,10 +15,3 @@ class Slip_1_1_B{
         fw.close();
     }
 }
-
-//Text Files
-//a.txt
-//Coding Activity 2022
-//
-//b.txt
-//Coding Activity
